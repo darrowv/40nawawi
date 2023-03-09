@@ -2,5 +2,10 @@
   export let data;
 </script>
 
-<h1>{data.title}</h1>
-<div>{@html data.content}</div>
+<svelte:head>
+  <title>Хадис {data.serialNumber}</title>
+</svelte:head>
+
+<article>
+  <svelte:component this={data.content} />
+</article>

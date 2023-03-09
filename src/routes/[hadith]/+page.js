@@ -1,10 +1,10 @@
-import { error } from "@sveltejs/kit";
+export async function load({ params }) {
+  const post = await import(`../../lib/hadiths/${params.hadith}.md`);
+  const content = post.default;
+  const serialNumber = params.hadith;
 
-export function load({ params }) {
   return {
-    title: params.hadith,
-    content: "Welcome to our blog. Lorem ipsum dolor sit amet...",
+    content,
+    serialNumber,
   };
-
-  throw error(404, "Not found");
 }
