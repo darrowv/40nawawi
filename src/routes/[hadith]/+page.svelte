@@ -1,5 +1,6 @@
 <script>
   export let data;
+  import "../../lib/styles/markdown.scss";
 </script>
 
 <svelte:head>
@@ -9,3 +10,12 @@
 <article>
   <svelte:component this={data.content} />
 </article>
+
+<style lang="scss">
+  article {
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    padding: 2rem;
+  }
+</style>

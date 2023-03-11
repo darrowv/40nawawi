@@ -15,6 +15,9 @@
 */
 html, body {
   height: 100%;
+  background-color: #0c1922;
+  color: #ffffff;
+  font-family: "Inglobal";
 }
 /*
   Typographic tweaks!
@@ -43,4 +46,15 @@ input, button, textarea, select {
 */
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
+}
+
+@font-face {
+  font-family: "Alexandria";
+  src: url("../fonts/alexandria/Alexandria.ttf");
+  font-weight: 400 800;
+}
+
+@font-face {
+  font-family: "Inglobal";
+  src: url("../fonts/inglobal/inglobal.ttf");
 }

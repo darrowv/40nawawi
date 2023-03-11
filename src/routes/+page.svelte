@@ -1,10 +1,6 @@
 <script>
   export let data;
-  let link;
 
-  function clickTheLink(index) {
-    data.posts[index].element.click();
-  }
 </script>
 
 <svelte:head>
@@ -16,19 +12,20 @@
 <ul>
   {#each data.posts as hadith, i}
     <li>
-      <button on:click={() => clickTheLink(i)}>
-        <a href={hadith.serialNumber} bind:this={data.posts[i].element}>
+        <a href={hadith.serialNumber}>
           {hadith.serialNumber}
         </a>
-      </button>
     </li>
   {/each}
 </ul>
 
 <style lang="scss">
+  
   h1 {
     text-align: center;
     padding: 5rem;
+    font-size: 3.5rem;
+    font-weight: 500;
   }
 
   ul {
@@ -45,20 +42,18 @@
       display: grid;
       place-items: center;
       
-      button {
+      a {
+        display: grid;
+        place-content: center;
+        text-decoration: none;
+        font-size: 5rem;
         width: 10rem;
         height: 10rem;
-        background-color: aquamarine;
+        background-color: rgba(198, 198, 198, 0.793);
         border-radius: 50%;
-        color: red;
-        cursor: pointer;
+        color: rgb(45, 10, 10);
       }
     }
-
-    a {
-      text-decoration: none;
-      font-size: 3rem;
-      padding: auto;
-    }
+    
   }
 </style>
