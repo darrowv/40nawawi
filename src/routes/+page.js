@@ -1,6 +1,6 @@
 export const load = async ({ fetch }) => {
-  const response = await fetch("/api/hadiths");
-  const posts = await response.json();
+  const res = await fetch("/api/hadiths");
+  const posts = await res.json();
 
   return {
     posts,
