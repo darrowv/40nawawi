@@ -19,6 +19,18 @@ html, body {
   color: #ffffff;
   font-family: "Inglobal";
 }
+
+@media (max-width: 1100px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 9px;
+  }
+}
 /*
   Typographic tweaks!
   4. Add accessible line-height

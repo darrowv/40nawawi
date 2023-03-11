@@ -48,3 +48,23 @@ hr {
     padding: 0.5rem;
   }
 }
+
+@media (max-width: 1100px) {
+  .arabic-text, .russian-text {
+    padding: 1rem 7rem;
+  }
+
+  .arabic-subtext, .russian-subtext {
+    padding: 0 10rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .arabic-text, .russian-text {
+    padding: 1rem 4rem;
+  }
+
+  .arabic-subtext, .russian-subtext {
+    padding: 0 7rem;
+  }
+}

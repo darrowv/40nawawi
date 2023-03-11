@@ -17,5 +17,10 @@
     margin: auto;
     width: 90%;
     padding: 2rem;
+
+    @media (max-width: 800px) {
+      padding: 0;
+      width: 95%;
+    }
   }
 </style>

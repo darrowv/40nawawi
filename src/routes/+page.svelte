@@ -7,7 +7,7 @@
   <title>40 Хадисов Ан-Навави</title>
 </svelte:head>
 
-<h1>40 хадисов ан-Навави</h1>
+<h1>40 хадисов ан-Науауи</h1>
 
 <ul>
   {#each data.posts as hadith, i}
@@ -38,6 +38,10 @@
     grid-template-columns: repeat(5, 1fr);
     row-gap: 4rem;
 
+    @media (max-width: 700px) {
+      width: 90%;
+    }
+
     li {
       display: grid;
       place-items: center;
@@ -52,6 +56,18 @@
         background-color: rgba(198, 198, 198, 0.793);
         border-radius: 50%;
         color: rgb(45, 10, 10);
+
+        @media (max-width: 700px) {
+          width: 8.5rem;
+          height: 8.5rem;
+          font-size: 3.5rem;
+        }
+
+        @media (max-width: 550px) {
+          width: 6.5rem;
+          height: 6.5rem;
+          font-size: 3rem;
+        }
       }
     }
     
