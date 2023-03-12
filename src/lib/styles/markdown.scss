@@ -1,8 +1,6 @@
 .hadith-header {
   padding: 2rem;
   font-size: 2.75rem;
-  font-weight: 600;
-  word-break: break-word;
 }
 
 hr {
@@ -28,13 +26,12 @@ hr {
 
 .russian-text {
   font-size: 1.75rem;
-  font-weight: 400;
   line-height: 2.5rem;
   padding: 1rem 10rem;
 }
 
 .russian-subtext {
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 2rem;
   padding: 0 15rem;
   opacity: 0.7;
@@ -49,9 +46,13 @@ hr {
   }
 }
 
+.bold {
+  font-family: "Inglobal Bold";
+}
+
 @media (max-width: 1100px) {
   .arabic-text, .russian-text {
-    padding: 1rem 7rem;
+    padding: 1rem 5rem;
   }
 
   .arabic-subtext, .russian-subtext {
@@ -61,10 +62,15 @@ hr {
 
 @media (max-width: 800px) {
   .arabic-text, .russian-text {
-    padding: 1rem 4rem;
+    padding: 1rem 5rem;
   }
 
   .arabic-subtext, .russian-subtext {
     padding: 0 7rem;
+  }
+
+  .hadith-header {
+    margin-top: 2rem;
+    font-size: 2.25rem;
   }
 }

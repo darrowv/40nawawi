@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-  <title>40 Хадисов Ан-Навави</title>
+  <title>40 Хадисов Ан-Науауи</title>
 </svelte:head>
 
 <h1>40 хадисов ан-Науауи</h1>
@@ -24,6 +24,7 @@
   h1 {
     text-align: center;
     padding: 5rem;
+    padding-top: 3rem;
     font-size: 3.5rem;
     font-weight: 500;
   }
@@ -33,6 +34,7 @@
     margin: auto;
     list-style-type: none;
     padding: 0;
+    padding-bottom: 3rem;
     display: grid;
     place-items: center;
     grid-template-columns: repeat(5, 1fr);
