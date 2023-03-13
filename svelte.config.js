@@ -17,6 +17,9 @@ const config = {
       extensions: [".md"],
     }),
   ],
+  alias: {
+    $lib: './src/lib',
+  },
 };
 
 export default config;

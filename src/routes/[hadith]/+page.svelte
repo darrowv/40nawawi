@@ -1,6 +1,6 @@
 <script>
   export let data;
-  import "../../lib/styles/markdown.scss";
+  import "$lib/styles/markdown.scss";
   import { fly } from "svelte/transition";
 </script>
 
