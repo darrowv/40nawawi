@@ -2,8 +2,6 @@
   import { fly } from "svelte/transition";
   import "$lib/styles/markdown.scss";
   export let data;
-
-  console.log(data.thumbnail);
 </script>
 
 <svelte:head>

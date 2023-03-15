@@ -6,18 +6,18 @@
   <title>40 Хадисов ан-Науауи</title>
 </svelte:head>
 
-<div class="title">
+<header class="title">
   <hr />
   <h1>40 хадисов ан-Науауи</h1>
   <hr />
-</div>
+</header>
 
 <ul>
   {#each data.posts as hadith, i}
     <li>
       <a href={hadith.serialNumber}>
         <p>{hadith.serialNumber}</p>
-        <img src={`/thumbnails/${i + 1}.jpg`} alt="dawn" />
+        <img src={`/thumbnails/${i + 1}.jpg`} alt="" />
       </a>
     </li>
   {/each}
