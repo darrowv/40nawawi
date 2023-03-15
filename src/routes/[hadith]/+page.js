@@ -5,6 +5,6 @@ export async function load({ params }) {
 
   return {
     content,
-    serialNumber,
+    serialNumber
   };
 }

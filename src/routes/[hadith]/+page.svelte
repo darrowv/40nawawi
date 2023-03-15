@@ -1,7 +1,9 @@
 <script>
-  export let data;
-  import "$lib/styles/markdown.scss";
   import { fly } from "svelte/transition";
+  import "$lib/styles/markdown.scss";
+  export let data;
+
+  console.log(data.thumbnail);
 </script>
 
 <svelte:head>
@@ -9,24 +11,22 @@
 </svelte:head>
 
 <a class="to-home" href="/">{"<"} Домой</a>
-<article in:fly="{{ y: 200, duration: 1200 }}">
+
+<article in:fly={{ y: 200, duration: 1200 }}>
   <svelte:component this={data.content} />
 </article>
 
 {#if data.serialNumber > 1}
-  <a class="previous" href={data.serialNumber - 1}>
-    Предыдущий
-  </a>
+  <a class="previous" href={data.serialNumber - 1}> Предыдущий </a>
 {/if}
 {#if data.serialNumber < 42}
-  <a class="next" href={++data.serialNumber}>
-    Следующий
-  </a>
+  <a class="next" href={++data.serialNumber}> Следующий </a>
 {/if}
 
-
 <style lang="scss">
-  .to-home, .previous, .next {
+  .to-home,
+  .previous,
+  .next {
     text-decoration: none;
     position: fixed;
     color: white;
