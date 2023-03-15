@@ -1,4 +1,6 @@
+# 40 Хадисов ан-Науауи
+
 ## Credits
 
-- https://vk.com/sorok_hadisov
-- https://znaniavislame.wordpress.com/2015/04/09/40/
+- [Группа ВК с текстами](https://vk.com/sorok_hadisov)
+- [Книга с разъяснениями](https://znaniavislame.wordpress.com/2015/04/09/40/)
