@@ -29,8 +29,12 @@
   }
 
   hr {
-    width: 50rem;
+    width: 45rem;
     margin: auto;
+
+    @media (max-width: 500px) {
+      width: 35rem;
+    }
   }
 
   h1 {
@@ -38,6 +42,10 @@
     margin: 1rem auto;
     font-size: 3.75rem;
     font-weight: 500;
+
+    @media (max-width: 500px) {
+      font-size: 3rem;
+    }
   }
 
   ul {
