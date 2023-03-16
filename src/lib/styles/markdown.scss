@@ -23,9 +23,6 @@ hr {
   line-height: 3rem;
   opacity: 0.6;
   padding: 0.9rem 10rem;
-
-  // padding: 0 15rem;
-  // text-align: center;
 }
 
 .russian-text {
@@ -38,9 +35,7 @@ hr {
   font-size: 1.2rem;
   line-height: 1.75rem;
   padding: 0.9rem 10rem;
-  // padding: 2rem 15rem;
   opacity: 0.6;
-  // text-align: center;
 }
 
 .list {
@@ -85,10 +80,6 @@ details[open] summary ~ * {
   .arabic-text, .russian-text {
     padding: 1rem 5rem;
   }
-
-  .arabic-subtext, .russian-subtext {
-    // padding: 0 10rem;
-  }
 }
 
 @media (max-width: 800px) {
@@ -98,7 +89,6 @@ details[open] summary ~ * {
   }
 
   .arabic-subtext, .russian-subtext {
-    // padding: 2rem 7rem;
     padding: 1rem 2rem;
 
   }
@@ -116,7 +106,6 @@ details[open] summary ~ * {
   }
 
   .arabic-subtext, .russian-subtext {
-    // padding: 2rem 2rem;
     padding: 1rem;
 
   }
