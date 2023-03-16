@@ -62,6 +62,10 @@ hr {
   margin-bottom: 1rem;
 }
 
+.endline {
+  margin: 3rem 2rem;
+}
+
 details[open] summary ~ * {
   animation: sweep .5s ease-in-out;
 }

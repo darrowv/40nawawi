@@ -32,10 +32,12 @@
     padding: 0.4rem;
     border-radius: 10px;
     transition: 0.1s;
+    font-size: 1.25rem;
 
     @media (max-width: 800px) {
       border-radius: 0;
       padding: 0.8rem;
+      font-size: 1.75rem;
     }
 
     &:hover {
