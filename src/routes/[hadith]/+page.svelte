@@ -79,14 +79,24 @@
   }
 
   article {
-    text-align: center;
     margin: auto;
     width: 90%;
     padding: 1.5rem;
+    text-align: center;
 
     @media (max-width: 800px) {
       padding: 0;
       width: 95%;
+      text-align: initial;
     }
+
+    // @media (min-width: 800px) {
+    //   text-align: unset;
+
+    //   h1 {
+    //     text-align: center;
+    //   }
+    // }
+
   }
 </style>
