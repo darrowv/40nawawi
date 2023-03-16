@@ -94,8 +94,12 @@ details[open] summary ~ * {
   }
 
   .hadith-header {
-    margin-top: 2rem;
+    margin-top: 5.5rem;
     font-size: 2.25rem;
+  }
+
+  .endline {
+    margin-bottom: 6rem;
   }
 }
 
@@ -107,6 +111,5 @@ details[open] summary ~ * {
 
   .arabic-subtext, .russian-subtext {
     padding: 1rem;
-
   }
 }
