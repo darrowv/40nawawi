@@ -40,10 +40,10 @@ hr {
 
 .list {
   text-align: start;
-  padding: 0 20rem;
-  margin-bottom: 2.5rem;
+  padding: 0 10rem;
+  margin-left: 4rem;
   li {
-    padding: 0.5rem;
+    padding: 0.25rem;
   }
 }
 
@@ -59,8 +59,12 @@ hr {
   margin-bottom: 2rem;
 }
 
-.comments-text br {
-  margin-bottom: 1rem;
+.comments-text {
+  margin-bottom: 5rem;
+
+  br {
+    margin-bottom: 1rem;
+  }
 }
 
 .endline {
@@ -68,48 +72,70 @@ hr {
 }
 
 details[open] summary ~ * {
-  animation: sweep .5s ease-in-out;
+  animation: sweep 0.5s ease-in-out;
 }
 
 @keyframes sweep {
-  0%    {opacity: 0; transform: translateX(-10px)}
-  100%  {opacity: 1; transform: translateX(0)}
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @media (max-width: 1100px) {
-  .arabic-text, .russian-text {
+  .arabic-text,
+  .russian-text {
     padding: 1rem 5rem;
   }
 }
 
 @media (max-width: 800px) {
-  .arabic-text, .russian-text {
+  .arabic-text,
+  .russian-text,
+  .comments {
     padding: 1rem 2rem;
+    line-height: 3.25rem;
     font-size: 2rem;
   }
 
-  .arabic-subtext, .russian-subtext {
-    padding: 1rem 2rem;
+  .arabic-text {
+    line-height: 4.25rem;
+  }
 
+  .comments-title {
+    text-align: initial;
+    margin-top: -5rem;
+    margin-bottom: 6rem;
+  }
+
+  .arabic-subtext,
+  .russian-subtext {
+    padding: 1rem 2rem;
   }
 
   .hadith-header {
     margin-top: 5.5rem;
-    font-size: 2.25rem;
+    font-size: 2.75rem;
   }
 
   .endline {
-    margin-bottom: 6rem;
+    margin-bottom: 7rem;
   }
 }
 
 @media (max-width: 500px) {
-  .arabic-text, .russian-text {
+  .arabic-text,
+  .russian-text {
     font-size: 2.25rem;
     padding: 1rem;
   }
 
-  .arabic-subtext, .russian-subtext {
+  .arabic-subtext,
+  .russian-subtext {
     padding: 1rem;
   }
 }

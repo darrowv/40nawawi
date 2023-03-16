@@ -36,8 +36,8 @@
 
     @media (max-width: 800px) {
       border-radius: 0;
-      padding: 0.8rem;
-      font-size: 1.75rem;
+      padding: 1.25rem;
+      font-size: 2rem;
     }
 
     &:hover {
@@ -89,14 +89,5 @@
       width: 95%;
       text-align: initial;
     }
-
-    // @media (min-width: 800px) {
-    //   text-align: unset;
-
-    //   h1 {
-    //     text-align: center;
-    //   }
-    // }
-
   }
 </style>

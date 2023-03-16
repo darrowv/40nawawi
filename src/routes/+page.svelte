@@ -59,6 +59,10 @@
     grid-template-columns: repeat(5, 1fr);
     row-gap: 4rem;
 
+    @media (max-width: 550px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
     @media (max-width: 900px) {
       width: 90%;
     }
@@ -80,6 +84,10 @@
 
         img {
           opacity: 0.7;
+
+          @media (max-width: 800px) {
+            opacity: 0.8;
+          }
         }
 
         overflow: hidden;
@@ -107,9 +115,9 @@
         }
 
         @media (max-width: 550px) {
-          width: 6.5rem;
-          height: 6.5rem;
-          font-size: 3rem;
+          width: 11rem;
+          height: 11rem;
+          font-size: 5.5rem;
         }
 
         &:hover {
