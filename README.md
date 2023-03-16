@@ -1,5 +1,7 @@
 # 40 Хадисов ан-Науауи
 
+## [Перейти на сайт](https://40nawawi.vercel.app)
+
 ## Credits
 
 - [Группа ВК с текстами](https://vk.com/sorok_hadisov)
