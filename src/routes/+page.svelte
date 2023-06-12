@@ -13,11 +13,11 @@
 </header>
 
 <ul>
-  {#each data.posts as hadith, i}
+  {#each data.posts as { serialNumber }}
     <li>
-      <a href={hadith.serialNumber}>
-        <p>{hadith.serialNumber}</p>
-        <img src={`/thumbnails/${i + 1}.jpg`} alt="" />
+      <a class="hadith-link" href={serialNumber}>
+        <p>{serialNumber}</p>
+        <img src={`/thumbnails/${serialNumber}.jpg`} alt="" />
       </a>
     </li>
   {/each}
@@ -95,7 +95,6 @@
         place-content: center;
         text-decoration: none;
         font-size: 5rem;
-        font-family: "Inglobal Bold";
         width: 10rem;
         height: 10rem;
         border: 2px solid grey;
