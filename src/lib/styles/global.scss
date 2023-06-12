@@ -13,7 +13,6 @@ body {
   height: 100%;
   background-color: rgb(15, 22, 38);
   color: #ffffff;
-  font-family: "Inglobal";
 }
 
 html {
@@ -61,18 +60,6 @@ h6 {
   overflow-wrap: break-word;
 }
 
-@font-face {
-  font-family: "Samim";
-  src: url("/fonts/samim/Samim Regular.ttf");
-  font-weight: 400 800;
-}
-
-@font-face {
-  font-family: "Inglobal";
-  src: url("/fonts/inglobal/inglobal.ttf");
-}
-
-@font-face {
-  font-family: "Inglobal Bold";
-  src: url("/fonts/inglobal/inglobalb.ttf");
+a {
+  user-select: none;
 }
